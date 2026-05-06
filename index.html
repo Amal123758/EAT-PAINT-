@@ -1,4 +1,3 @@
-
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +27,6 @@
         overflow-x: hidden;
     }
 
-    
     nav {
         position: fixed;
         top: 0;
@@ -114,7 +112,6 @@
         justify-content: center;
     }
 
-  
     .hero {
         height: 100vh;
         background: linear-gradient(rgba(74, 124, 89, 0.6), rgba(74, 124, 89, 0.4)),
@@ -195,7 +192,6 @@
         box-shadow: 0 30px 60px rgba(212, 175, 55, 0.4);
     }
 
- 
     section {
         padding: 100px 0;
         max-width: 1200px;
@@ -215,7 +211,6 @@
         background-clip: text;
     }
 
-  
     .menu-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -294,7 +289,6 @@
         transform: scale(1.05);
     }
 
-  
     .cart {
         display: none;
         position: fixed;
@@ -350,7 +344,6 @@
         color: var(--green-primary);
     }
 
-   
     .promotions {
         background: linear-gradient(135deg, var(--beige), var(--green-secondary));
     }
@@ -386,7 +379,6 @@
         transform: translateY(-15px);
     }
 
-  
     .gallery-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -426,7 +418,6 @@
         opacity: 1;
     }
 
-   
     .reservation-form {
         max-width: 600px;
         margin: 0 auto;
@@ -467,7 +458,6 @@
         border-color: var(--green-primary);
     }
 
-  
     .horaires {
         background: linear-gradient(135deg, var(--green-primary), var(--green-secondary));
         color: white;
@@ -484,7 +474,6 @@
         margin: 2rem 0;
     }
 
-  
     footer {
         background: #2d4a3a;
         color: white;
@@ -492,7 +481,6 @@
         padding: 3rem 0;
     }
 
-    
     @media (max-width: 768px) {
         .nav-links {
             display: none;
@@ -513,7 +501,6 @@
         }
     }
 
-   
     @keyframes fadeInUp {
         from {
             opacity: 0;
@@ -536,7 +523,6 @@
         transform: translateY(0);
     }
 
-    
     .observe {
         opacity: 0;
         transform: translateY(50px);
@@ -547,11 +533,10 @@
         opacity: 1;
         transform: translateY(0);
     }
-</style>
-
+    </style>
 </head>
 <body>
-   
+
     <nav>
         <div class="nav-container">
             <div class="logo">Eat & Paint</div>
@@ -570,262 +555,239 @@
         </div>
     </nav>
 
-<section id="accueil" class="hero">
-    <h1>Eat and Paint</h1>
-    <p class="slogan">Mangez, peignez, vivez l'expérience</p>
-    <a href="#reservation" class="btn">Réserver une table</a>
-</section>
+    <!-- ✅ CORRECTION ICI : section → div -->
+    <div id="accueil" class="hero">
+        <h1>Eat and Paint</h1>
+        <p class="slogan">Mangez, peignez, vivez l'expérience</p>
+        <a href="#reservation" class="btn">Réserver une table</a>
+    </div>
 
-
-<section id="menu" class="observe">
-    <h2 class="section-title">Notre Menu Artistique</h2>
-    <div class="menu-grid">
-        <div class="menu-category">
-            <h3 class="category-title">🥗 Salé</h3>
-            <div class="menu-item" data-name="Sushi" data-price="12">
-                <div class="menu-info">
-                    <h4>sushi</h4>
-                    <p>Fresh greens, tomatoes, feta, olives, vinaigrette maison</p>
-                    <img src="image.jpg14.png" class="sushi">
+    <section id="menu" class="observe">
+        <h2 class="section-title">Notre Menu Artistique</h2>
+        <div class="menu-grid">
+            <div class="menu-category">
+                <h3 class="category-title">🥗 Salé</h3>
+                <div class="menu-item" data-name="Sushi" data-price="12">
+                    <div class="menu-info">
+                        <h4>sushi</h4>
+                        <p>Fresh greens, tomatoes, feta, olives, vinaigrette maison</p>
+                        <img src="image.jpg14.png" class="sushi">
+                    </div>
+                    <div>
+                        <span class="price">12dt</span>
+                        <button class="add-btn">Ajouter</button>
+                    </div>
                 </div>
-                <div>
-                    <span class="price">12dt</span>
-                    <button class="add-btn">Ajouter</button>
+                <div class="menu-item" data-name="mini burgers" data-price="15">
+                    <div class="menu-info">
+                        <h4>pack 4 mini burgers</h4>
+                        <p>Spinach, goat cheese, caramelized onions</p>
+                        <img src="image.jpg13.png">
+                    </div>
+                    <div>
+                        <span class="price">15dt</span>
+                        <button class="add-btn">Ajouter</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-name="Tartine Provençale" data-price="14">
+                    <div class="menu-info">
+                        <h4>pack 4 mini tacos</h4>
+                        <p>Grilled bread, tapenade, fresh mozzarella, basil</p>
+                        <img src="image.jpg15.png" class="tacos">
+                    </div>
+                    <div>
+                        <span class="price">14dt</span>
+                        <button class="add-btn">Ajouter</button>
+                    </div>
                 </div>
             </div>
-            <div class="menu-item" data-name="mini burgers" data-price="15">
-                <div class="menu-info">
-                    <h4>pack 4 mini burgers</h4>
-                    
-                    <p>Spinach, goat cheese, caramelized onions</p>
-                    <img src="image.jpg13.png" class="pack 4 mini burgers">
+            <div class="menu-category">
+                <h3 class="category-title">🍰 Sucré</h3>
+                <div class="menu-item" data-name="Tarte aux Fruits" data-price="8">
+                    <div class="menu-info">
+                        <h4>Tarte aux Fruits</h4>
+                        <p>Seasonal fruits, almond cream, pastry crust</p>
+                        <img src="image.jpg8.png">
+                    </div>
+                    <div>
+                        <span class="price">8dt</span>
+                        <button class="add-btn">Ajouter</button>
+                    </div>
                 </div>
-                <div>
-                    <span class="price">15dt</span>
-                    <button class="add-btn">Ajouter</button>
+                <div class="menu-item" data-name="Moelleux Chocolat" data-price="9">
+                    <div class="menu-info">
+                        <h4>Moelleux Chocolat</h4>
+                        <p>Dark chocolate, raspberry coulis</p>
+                        <img src="image.jpg7.png">
+                    </div>
+                    <div>
+                        <span class="price">9dt</span>
+                        <button class="add-btn">Ajouter</button>
+                    </div>
                 </div>
-            </div>
-            <div class="menu-item" data-name="Tartine Provençale" data-price="14">
-                <div class="menu-info">
-                    <h4>pack 4 mini tacos</h4>
-                    <p>Grilled bread, tapenade, fresh mozzarella, basil</p>
-                    <img src="image.jpg15.png" class="tacos">
-                </div>
-                <div>
-                    <span class="price">14dt</span>
-                    <button class="add-btn">Ajouter</button>
+                <div class="menu-item" data-name="croissant" data-price="7">
+                    <div class="menu-info">
+                        <h4>croissant</h4>
+                        <p>Cooked cream, chocolat, mint</p>
+                        <img src="image.jpg11.png">
+                    </div>
+                    <div>
+                        <span class="price">5dt</span>
+                        <button class="add-btn">Ajouter</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="menu-category">
-            <h3 class="category-title">🍰 Sucré</h3>
-            <div class="menu-item" data-name="Tarte aux Fruits" data-price="8">
-                <div class="menu-info">
-                    <h4>Tarte aux Fruits</h4>
-                    <p>Seasonal fruits, almond cream, pastry crust</p>
-                    <img src="image.jpg8.png" >
-                    
-                </div>
-                <div>
-                    <span class="price">8dt</span>
-                    <button class="add-btn">Ajouter</button>
-                </div>
-            </div>
-            <div class="menu-item" data-name="Moelleux Chocolat" data-price="9">
-                <div class="menu-info">
-                    <h4>Moelleux Chocolat</h4>
-                    <p>Dark chocolate, raspberry coulis</p>
-                    <img src="image.jpg7.png" >
-                </div>
-                
-                <div>
-                    <span class="price">9dt</span>
-                    <button class="add-btn">Ajouter</button>
-                </div>
-            </div>
-            <div class="menu-item" data-name="croissant" data-price="7">
-                <div class="menu-info">
-                    <h4>croissant</h4>
-                    <p>Cooked cream, chocolat, mint</p>
-                    <img src="image.jpg11.png" >
-                </div>
-                <div>
-                    <span class="price">5dt</span>
-                    <button class="add-btn">Ajouter</button>
-                </div>
-            </div>
+    </section>
+
+    <div class="cart" id="cart">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Votre Panier</h3>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cart-total">
+            <div>Total: <span id="cartTotal">0dt</span></div>
+            <button class="btn" style="margin-top: 1rem; width: 100%;" onclick="checkout()">Commander</button>
         </div>
     </div>
-</section>
 
-
-<div class="cart" id="cart">
-    <div class="cart-header">
-        <h3><i class="fas fa-shopping-cart"></i> Votre Panier</h3>
-    </div>
-    <div id="cartItems"></div>
-    <div class="cart-total">
-        <div>Total: <span id="cartTotal">0dt</span></div>
-        <button class="btn" style="margin-top: 1rem; width: 100%;" onclick="checkout()">Commander</button>
-    </div>
-</div>
-
-
-<section id="promotions" class="promotions observe">
-    <h2 class="section-title" style="color: white; -webkit-text-fill-color: white;">🎁 Promotions</h2>
-    <div class="promo-grid">
-        <div class="promo-card">
-            <i class="fas fa-calendar-week" style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"></i>
-            <h3>Week-end Artistique</h3>
-            <p>20% de réduction sur tous les ateliers peinture ce week-end</p>
-        </div>
-        <div class="promo-card">
-            <i class="fas fa-star" style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"></i>
-            <h3>Fidélité Récompensée</h3>
-            <p>5ème visite = 1 atelier peinture gratuit</p>
-        </div>
-        <div class="promo-card">
-            <i class="fas fa-users" style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"></i>
-            <h3>Groupes Bienvenus</h3>
-            <p>Menu groupe à 25dt/pers. dès 8 personnes</p>
-        </div>
-    </div>
-</section>
-
-
-<section id="galerie" class="observe">
-    <h2 class="section-title">🖼️ Galerie d'Expériences</h2>
-    <div class="gallery-grid">
-        <div class="gallery-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%23A8D5BA%22 width=%22400%22 height=%22300%22/><circle fill=%22%23F5F2E9%22 cx=%22100%22 cy=%2280%22 r=%2230%22/><circle fill=%22%23D4AF37%22 cx=%22300%22 cy=%22120%22 r=%2220%22/><rect fill=%22%234A7C59%22 x=%2220%22 y=%22200%22 width=%22360%22 height=%2280%22 rx=%2210%22/></svg>');">
-            <div class="gallery-overlay">
-                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
-                 <img src="image.jpg21.png" >
+    <section id="promotions" class="promotions observe">
+        <h2 class="section-title" style="color: white; -webkit-text-fill-color: white;">🎁 Promotions</h2>
+        <div class="promo-grid">
+            <div class="promo-card">
+                <i class="fas fa-calendar-week" style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"></i>
+                <h3>Week-end Artistique</h3>
+                <p>20% de réduction sur tous les ateliers peinture ce week-end</p>
+            </div>
+            <div class="promo-card">
+                <i class="fas fa-star" style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"></i>
+                <h3>Fidélité Récompensée</h3>
+                <p>5ème visite = 1 atelier peinture gratuit</p>
+            </div>
+            <div class="promo-card">
+                <i class="fas fa-users" style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"></i>
+                <h3>Groupes Bienvenus</h3>
+                <p>Menu groupe à 25dt/pers. dès 8 personnes</p>
             </div>
         </div>
-        <div class="gallery-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%238BBE8C%22 width=%22400%22 height=%22300%22/><path fill=%22%23F5F2E9%22 d=%22M50 100 Q150 80 250 120 Q350 160 380 140 L380 300 L0 300 Z%22/><circle fill=%22%23D4AF37%22 cx=%22200%22 cy=%22200%22 r=%2240%22/></svg>');">
-            <div class="gallery-overlay">
-                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
-                <img src="image.jpg22.png" >
+    </section>
+
+    <section id="galerie" class="observe">
+        <h2 class="section-title">🖼️ Galerie d'Expériences</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%23A8D5BA%22 width=%22400%22 height=%22300%22/><circle fill=%22%23F5F2E9%22 cx=%22100%22 cy=%2280%22 r=%2230%22/><circle fill=%22%23D4AF37%22 cx=%22300%22 cy=%22120%22 r=%2220%22/><rect fill=%22%234A7C59%22 x=%2220%22 y=%22200%22 width=%22360%22 height=%2280%22 rx=%2210%22/></svg>');">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    <img src="image.jpg21.png">
+                </div>
+            </div>
+            <div class="gallery-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%238BBE8C%22 width=%22400%22 height=%22300%22/><path fill=%22%23F5F2E9%22 d=%22M50 100 Q150 80 250 120 Q350 160 380 140 L380 300 L0 300 Z%22/><circle fill=%22%23D4AF37%22 cx=%22200%22 cy=%22200%22 r=%2240%22/></svg>');">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    <img src="image.jpg22.png">
+                </div>
+            </div>
+            <div class="gallery-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%234A7C59%22 width=%22400%22 height=%22300%22/><circle fill=%22%23FFFFFF%22 opacity=%220.8%22 cx=%2280%22 cy=%2260%22 r=%2225%22/><circle fill=%22%23F5F2E9%22 cx=%22320%22 cy=%2280%22 r=%2235%22/><rect fill=%22%23D4AF37%22 x=%22100%22 y=%22200%22 width=%22200%22 height=%2260%22 rx=%2215%22/></svg>');">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    <img src="image.jpg23.png">
+                </div>
+            </div>
+            <div class="gallery-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%23A8D5BA%22 width=%22400%22 height=%22300%22/><path fill=%22%234A7C59%22 d=%22M0 150 Q100 120 200 160 Q300 200 400 170 L400 300 L0 300 Z%22/><circle fill=%22%23D4AF37%22 cx=%22150%22 cy=%2280%22 r=%2230%22/><circle fill=%22%23F5F2E9%22 cx=%22300%22 cy=%22100%22 r=%2225%22/></svg>');">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
+                    <img src="image.jpg24.png">
+                </div>
             </div>
         </div>
-        <div class="gallery-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%234A7C59%22 width=%22400%22 height=%22300%22/><circle fill=%22%23FFFFFF%22 opacity=%220.8%22 cx=%2280%22 cy=%2260%22 r=%2225%22/><circle fill=%22%23F5F2E9%22 cx=%22320%22 cy=%2280%22 r=%2235%22/><rect fill=%22%23D4AF37%22 x=%22100%22 y=%22200%22 width=%22200%22 height=%2260%22 rx=%2215%22/></svg>');">
-            <div class="gallery-overlay">
-                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
-                <img src="image.jpg23.png" >
+    </section>
+
+    <section id="reservation" class="observe">
+        <h2 class="section-title">📅 Réservez votre Table</h2>
+        <form class="reservation-form" id="reservationForm">
+            <div class="form-group">
+                <label>Nom et Prénom *</label>
+                <input type="text" required>
             </div>
-        </div>
-        <div class="gallery-item" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%23A8D5BA%22 width=%22400%22 height=%22300%22/><path fill=%22%234A7C59%22 d=%22M0 150 Q100 120 200 160 Q300 200 400 170 L400 300 L0 300 Z%22/><circle fill=%22%23D4AF37%22 cx=%22150%22 cy=%2280%22 r=%2230%22/><circle fill=%22%23F5F2E9%22 cx=%22300%22 cy=%22100%22 r=%2225%22/></svg>');">
-            <div class="gallery-overlay">
-                <i class="fas fa-search-plus" style="font-size: 2rem; color: white;"></i>
-                <img src="image.jpg24.png" >
+            <div class="form-group">
+                <label>Téléphone *</label>
+                <input type="tel" required>
             </div>
-        </div>
-    </div>
-</section>
+            <div class="form-group">
+                <label>Date * (Ven/Sam/Dim)</label>
+                <input type="date" id="reservationDate" required>
+            </div>
+            <div class="form-group">
+                <label>Heure * (10h-22h)</label>
+                <input type="time" id="reservationTime" min="10:00" max="22:00" required>
+            </div>
+            <div class="form-group">
+                <label>Nombre de personnes *</label>
+                <select required>
+                    <option value="">Sélectionner</option>
+                    <option value="1">1 personne</option>
+                    <option value="2">2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">4 personnes</option>
+                    <option value="5+">5+ personnes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Message optionnel</label>
+                <textarea rows="4" placeholder="Demande spéciale, allergies..."></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Réserver</button>
+        </form>
+    </section>
 
+    <section id="horaires" class="horaires observe">
+        <div class="horaires-content">
+            <h2 class="section-title" style="color: white; -webkit-text-fill-color: white;">⏰ Horaires d'ouverture</h2>
+            <div class="opening-hours">
+                <i class="fas fa-calendar-day" style="font-size: 2rem; margin-right: 1rem;"></i>
+                <strong>Vendredi, Samedi, Dimanche</strong><br>
+                <strong>10h00 - 22h00</strong>
+            </div>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Situé dans un grand jardin à Monastir</p>
+        </div>
+    </section>
 
-<section id="reservation" class="observe">
-    <h2 class="section-title">📅 Réservez votre Table</h2>
-    <form class="reservation-form" id="reservationForm">
-        <div class="form-group">
-            <label>Nom et Prénom *</label>
-            <input type="text" required>
-        </div>
-        <div class="form-group">
-            <label>Téléphone *</label>
-            <input type="tel" required>
-        </div>
-        <div class="form-group">
-            <label>Date * (Ven/Sam/Dim)</label>
-            <input type="date" id="reservationDate" required>
-        </div>
-        <div class="form-group">
-            <label>Heure * (10h-22h)</label>
-            <input type="time" id="reservationTime" min="10:00" max="22:00" required>
-        </div>
-        <div class="form-group">
-            <label>Nombre de personnes *</label>
-            <select required>
-                <option value="">Sélectionner</option>
-                <option value="1">1 personne</option>
-                <option value="2">2 personnes</option>
-                <option value="3">3 personnes</option>
-                <option value="4">4 personnes</option>
-                <option value="5+">5+ personnes</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Message optionnel</label>
-            <textarea rows="4" placeholder="Demande spéciale, allergies..."></textarea>
-        </div>
-        <button type="submit" class="btn" style="width: 100%;">Réserver</button>
-    </form>
-</section>
-
-
-<section id="horaires" class="horaires observe">
-    <div class="horaires-content">
-        <h2 class="section-title" style="color: white; -webkit-text-fill-color: white;">⏰ Horaires d'ouverture</h2>
-        <div class="opening-hours">
-            <i class="fas fa-calendar-day" style="font-size: 2rem; margin-right: 1rem;"></i>
-            <strong>Vendredi, Samedi, Dimanche</strong><br>
-            <strong>10h00 - 22h00</strong>
-        </div>
-        <p style="font-size: 1.2rem; opacity: 0.9;">Situé dans un grand jardin à Monastir</p>
-    </div>
-</section>
-
-
-<footer>
-    <p>&copy; 2024 Eat and Paint. Tous droits réservés. | Monastir, Tunisie</p>
-</footer>
+    <footer>
+        <p>&copy; 2024 Eat and Paint. Tous droits réservés. | Monastir, Tunisie</p>
+    </footer>
 
 <script>
-    
     let cart = [];
 
-   
     document.getElementById('cartToggle').addEventListener('click', function() {
         document.getElementById('cart').classList.toggle('active');
     });
 
-   
     document.querySelectorAll('.add-btn').forEach(btn => {
         btn.addEventListener('click', function() {
             const item = this.closest('.menu-item');
             const name = item.dataset.name;
             const price = parseFloat(item.dataset.price);
-            
-            
             playAddSound();
-            
-           
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 this.style.transform = 'scale(1)';
             }, 150);
-            
-            
             cart.push({ name, price });
             updateCart();
         });
     });
 
     function playAddSound() {
-       
         const audioContext = new (window.AudioContext || window.webkitAudioContext)();
         const oscillator = audioContext.createOscillator();
         const gainNode = audioContext.createGain();
-        
         oscillator.connect(gainNode);
         gainNode.connect(audioContext.destination);
-        
         oscillator.frequency.value = 800;
         oscillator.type = 'sine';
-        
         gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
         gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2);
-        
         oscillator.start(audioContext.currentTime);
         oscillator.stop(audioContext.currentTime + 0.2);
     }
@@ -834,10 +796,8 @@
         const cartItems = document.getElementById('cartItems');
         const cartCount = document.getElementById('cartCount');
         const cartTotal = document.getElementById('cartTotal');
-        
         cartItems.innerHTML = '';
         let total = 0;
-        
         cart.forEach((item, index) => {
             total += item.price;
             const div = document.createElement('div');
@@ -851,7 +811,6 @@
             `;
             cartItems.appendChild(div);
         });
-        
         cartCount.textContent = cart.length;
         cartTotal.textContent = total.toFixed(2) + 'dt';
     }
@@ -872,23 +831,18 @@
         document.getElementById('cart').classList.remove('active');
     }
 
-   
     document.getElementById('reservationForm').addEventListener('submit', function(e) {
         e.preventDefault();
-        
-       
         const date = new Date(document.getElementById('reservationDate').value);
         const day = date.getDay();
         if (![5, 6, 0].includes(day)) {
             alert('Nous ne sommes ouverts que vendredi, samedi et dimanche.');
             return;
         }
-        
         alert('Réservation reçue ! Nous vous confirmons rapidement.');
         this.reset();
     });
 
-   
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -898,7 +852,6 @@
         });
     });
 
-    
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -916,7 +869,6 @@
         observer.observe(el);
     });
 
-   
     window.addEventListener('scroll', () => {
         const nav = document.querySelector('nav');
         if (window.scrollY > 100) {
